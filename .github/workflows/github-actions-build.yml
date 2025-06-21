@@ -31,7 +31,7 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            docker.io/${{ secrets.DOCKERHUB_USERNAME }}/banking-loan-service:${{ github.sha }}
-            docker.io/${{ secrets.DOCKERHUB_USERNAME }}/banking-loan-service:latest
+            docker.io/${{ secrets.DOCKER_USERNAME }}/banking-loan-service:${{ github.sha }}
+            docker.io/${{ secrets.DOCKER_USERNAME }}/banking-loan-service:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max

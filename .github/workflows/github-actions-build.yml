@@ -48,7 +48,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/banking-loan-server:latest
-            ${{ secrets.DOCKER_USERNAME }}/banking-loan-server:v${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/banking-loan-service:latest
+            ${{ secrets.DOCKER_USERNAME }}/banking-loan-service:v${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max

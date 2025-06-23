@@ -15,7 +15,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/LoanDB
-      port: 27017
+      auto-index-creation: true
   config:
     import: optional:configserver:http://ms-config-server:8888
 
